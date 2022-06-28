@@ -1,0 +1,25 @@
+.nav {
+    background-color: aqua;
+    height: 5rem;
+}
+
+.logo {
+    color: #fff;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    line-height: 3rem;
+    display: inline-block;
+}
+
+nav ul {
+    float: right;
+}
+nav li{
+    display: inline-block;
+    list-style-type: none;
+    
+}
+nav a{
+    text-decoration: none;
+}
