@@ -1,6 +1,16 @@
-.nav {
-    background-color: aqua;
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+
+nav {
+    background-color: #d9d98d;;
     height: 5rem;
+    width: 100%;
 }
 
 .logo {
@@ -8,7 +18,7 @@
     font-size: 2rem;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
-    line-height: 3rem;
+    line-height: 5rem;
     display: inline-block;
 }
 
@@ -18,8 +28,85 @@ nav ul {
 nav li{
     display: inline-block;
     list-style-type: none;
-    
+    /* margin: 0 0.5rem; */
+    line-height: 5rem;
+    margin: 0 0.5rem;
 }
 nav a{
     text-decoration: none;
+    color: #fff;
+    text-transform: capitalize;
+    /* border-radius: 0.2rem; */
+    padding: 0.3rem;
+}
+
+nav a.active {
+    text-decoration: none;
+    border-bottom: 2px solid #39440f;
+    color: #39440f;
+}
+nav a:hover,
+nav #bars:hover {
+    color: #39440f;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav #bars {
+    color: #fff;
+    /* display: inline-block; */
+    float: right;
+    line-height: 5rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 1048px) {
+    nav #bars {
+        font-size: 32px;
+        padding-left: 60px;
+    }
+    nav ul{
+        margin-right: 20px;
+    }
+    nav a {
+        font-size: 17px;
+    }
+}
+@media (max-width: 909px) {
+    nav #bars {
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #d9d98d;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav li {
+        display: block;
+        margin: 50px;
+        line-height: 30px;
+    }
+    nav a {
+        font-size: 20px;
+    }
+    a.active, a.hover {
+        border: none;
+        color: #fff;
+    }
+    nav ul.show {
+        left: 0pc;
+    }
+    section {
+        background: url(pexels-andre-mouton-1207875.jpg) no-repeat;
+        background-size: cover;
+        background-position: top center;
+        height: calc(100vh - 80px);
+    }
 }

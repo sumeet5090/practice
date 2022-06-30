@@ -5,25 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sumeet boga</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
-    <nav class="container-fluid nav">
+    <nav class="container-fluid">
         <div class="container">
             <div class="logo">
-                sumeet boga
+                sumeet
             </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">pricing</a></li>
-                    <li><a href="#">portfolio</a></li>
-                    <li><a href="#">contact</a></li>
-                </ul>
-            </div>
+            <span id="bars">
+                <i class='fas fa-bars'></i>
+            </span>
+            <ul>
+                <li><a class="active" href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">pricing</a></li>
+                <li><a href="#">portfolio</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
         </div>
     </nav>
+    <section>
+        
+    </section>
+    <script>
+        $(document).ready(function(){
+            $("#bars").click(function(){
+                $('nav ul').toggleClass('show');
+            });
+        });
+    </script>
 </body>
 </html>
